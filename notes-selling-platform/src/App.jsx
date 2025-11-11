@@ -6,6 +6,7 @@ import Profile from "./components/Profile";
 import { useState } from "react";
 import Home from "./components/Home";
 import Home2 from "./components/Home2";
+import Getstart from "./components/Getstart";
 
 function App() {
 
@@ -14,8 +15,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<Login />} />
+        <Route path="/" element={<Getstart />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/note" element={<Note user={user} onLogout={() => setUser(null)} />} />
         <Route path="/profile" element={<Profile />} />
