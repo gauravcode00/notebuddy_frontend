@@ -150,7 +150,7 @@ export default function Signup() {
         </form>
         <div className="text-center mt-4 text-sm text-gray-400">
           Already have an account?{" "}
-          <Link to="/" className="text-indigo-400 hover:underline">
+          <Link to="/login" className="text-indigo-400 hover:underline">
             Log in
           </Link>
         </div>
